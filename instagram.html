@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Instafeed</title>
+    <style>
+        a img{
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 20px;
+            border-radius: 30px;
+        }
+
+        #instafeed-container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body  class="img-container" >
+<h1 style="text-align: center">Instagram Posts of Guidona Softpedia</h1>
+<div id="instafeed-container"></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        target: "instafeed-container",
+        resolution: 'low_resolution',
+        accessToken: 'IGQWRQc1NndXRvX0hZAMXVWMzRaeV9ETEcyT182Uk54SGhhT2RxOVJ1bkhUajZAPeHBaVEJlT0RtaDJSdkJlZA3Q5YjdobmpUdVBhZA0xLMUVBZAVdnNnJRdVl3UldLUldqMEZAwelh3blpoMktmWTRRNl9uNGNkdkgyMEEZD'
+    });
+    userFeed.run();
+</script>
+</body>
+</html>
